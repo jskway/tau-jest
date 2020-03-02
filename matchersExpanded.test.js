@@ -15,4 +15,16 @@ describe('test multiply positive scenarios', () => {
   });
 })
 
+test('null', () => {
+  const n = null;
+  // Truthiness matchers
+  expect(n).toBeNull();
+  expect(n).toBeDefined();
+  expect(n).not.toBeUndefined();
+  expect(n).not.toBeTruthy();
+  expect(n).toBeFalsy();
+});
+
+
+
 
