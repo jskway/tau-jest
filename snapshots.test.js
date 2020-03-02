@@ -22,3 +22,11 @@ test('it returns all items with matching Item Name',() =>{
       { 'Id': '4', 'ItemName': 'Socks', 'Stock': '100'},
     ])
 })
+
+test('it returns all items with matching Id',() =>{
+    expect(filterItemStock(itemStock,'Id', '1')).toMatchSnapshot()
+})
+
+test('it returns all items with matching Item Name',() =>{
+    expect(filterItemStock(itemStock,'ItemName', 'Socks')).toMatchSnapshot()
+})
