@@ -25,6 +25,16 @@ test('null', () => {
   expect(n).toBeFalsy();
 });
 
+const carStock = [
+  'BMW',
+  'Mercedes',
+  'Ferrari',
+  'Toyota',
+];
 
+test('that the car stock list has a Ferrari', () => {
+  // Array matcher
+  expect(carStock).toContain('Ferrari');
+});
 
 
